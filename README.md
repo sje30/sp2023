@@ -15,7 +15,21 @@ I anticipate four lectures on Julia, and some work on reproducible research.
 
 ## Examples classes
 
-Dr Tom Edinburgh will lead the first two examples classes.  Stephen will give the third examples classs.
+Dr Tom Edinburgh (te269) will lead the first two examples classes.
+Stephen will give the third examples classs.  To be held in MR15.
+
+### Examples class 1
+
+09:00-12:00 2023-10-06
+
+### Examples class 2
+
+09:00-12:00 2023-10-13
+
+### Examples class 3
+
+09:00-12:00 2023-10-27
+
 
 ## Assignments
 

@@ -5,7 +5,9 @@ Welcome to the home page for the Scientific Programming 2023 course.
 
 ## Part one
 
-In part one, we will go through the core of R programming
+In part one, we will go through the core of R programming.
+[slides](spr.pdf)
+
 
 ## Part two
 

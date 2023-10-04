@@ -8,6 +8,17 @@ Welcome to the home page for the Scientific Programming 2023 course.
 In part one, we will go through the core of R programming.
 [slides](spr.pdf)
 
+### 2023-10-03 
+
+introduction to course; page 1 - 35
+
+### 2023-10-04
+
+first hour: page 36 - 
+
+second hour: introduction to linux (hands on).
+
+
 
 ## Part two
 

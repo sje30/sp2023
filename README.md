@@ -14,7 +14,7 @@ introduction to course; page 1 - 35
 
 ### 2023-10-05
 
-first hour: page 36 - 
+first hour: page 36 - 55
 
 second hour: [introduction to linux (hands on)](https://github.com/sje30/damtp-unix-intro)
 

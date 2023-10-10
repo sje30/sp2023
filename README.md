@@ -53,6 +53,10 @@ Stephen will give the third examples classs.  To be held in MR15.
 
 Assignments will be posted here.
 
+### Assignment 1
+
+[PDF](assigns/a1/spa1-2023.pdf)
+
 ## Moodle
 
 [Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will store the links to the lecture recordings, and the assignment submission system.

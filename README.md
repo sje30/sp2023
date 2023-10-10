@@ -19,6 +19,14 @@ first hour: page 36 - 55
 second hour: [introduction to linux (hands on)](https://github.com/sje30/damtp-unix-intro)
 
 
+### 2023-10-09
+
+page 56 - 111
+
+### 2023-10-10
+
+page 112 - 
+
 ## Part two
 
 I anticipate four lectures on Julia, and some work on reproducible research.

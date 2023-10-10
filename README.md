@@ -25,7 +25,11 @@ page 56 - 111
 
 ### 2023-10-10
 
-page 112 - 
+page 112 - 136  (+ first discussion of assignment 1 at beginning of
+first hour).
+
+
+### 2023-10-10
 
 ## Part two
 

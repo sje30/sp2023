@@ -19,11 +19,11 @@ first hour: page 36 - 55
 second hour: [introduction to linux (hands on)](https://github.com/sje30/damtp-unix-intro)
 
 
-### 2023-10-09
+### 2023-10-09 Mon
 
 page 56 - 111
 
-### 2023-10-10
+### 2023-10-10 Tue
 
 page 112 - 136  (+ first discussion of assignment 1 at beginning of
 first hour).
@@ -65,5 +65,20 @@ Assignments will be posted here.
 
 ## Moodle
 
-[Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will store the links to the lecture recordings, and the assignment submission system.
+[Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will
+ store the links to the lecture recordings, and the assignment
+ submission system.
+ 
+Due to a problem with the timetable rescheduling, the lectures on
+2023-10-09 were not automatically captured.  I have added the Teams
+recordings from 2022 for these lectures onto Moodle -- starting at about 18
+minutes into "SP05" and finishing about 40 mins in "SP07".  These can
+be found on the moodle site.
+
+There is also an online recording of the latex lecture which I don't
+plan to give this year.  <https://github.com/sje30/latex101>
+
+
+
+
 

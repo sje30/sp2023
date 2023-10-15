@@ -8,6 +8,8 @@ Welcome to the home page for the Scientific Programming 2023 course.
 In part one, we will go through the core of R programming.
 [slides](spr.pdf)
 
+[Source folder](https://github.com/lgatto/spr/) for these slides.
+
 ### 2023-10-03
 
 introduction to course; page 1 - 35

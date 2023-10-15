@@ -1,0 +1,265 @@
+\documentclass[11pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage[a4paper,margin=2cm,noheadfoot]{geometry}
+
+\usepackage{xspace,color}
+\usepackage{hyperref,mathpazo}
+\usepackage{listings}
+
+\newcommand{\hard}{\textbf{(Advanced:)}\xspace}
+
+
+\lstset{commentstyle=\color{red},keywordstyle=\color{black},
+showstringspaces=false}
+\lstnewenvironment{rc}[1][]{\lstset{language=R}}{}
+\newcommand{\ri}[1]{\lstinline{#1}}  %% Short for 'R inline'
+
+\usepackage{pdfpages}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+
+\title{Scientific Programming Assignment 1}
+\author{MPhil in Computational Biology}
+\date{\today}
+
+\maketitle
+
+
+If there are errors found, I will update the assignment on the web at\\
+\url{http://github.com/sje30/rpc2016}
+
+
+
+\textbf{Due date: 2023-10-24 23:45}
+
+Please submit your report to the Moodle website as a single .pdf
+file.  Name your file \verb+spa1_XXXXXX.pdf+, where XXXXXX is your
+unique 6-digit ID.
+
+Put a copy of your code (but nothing else) in the appendix of your
+report.  To include R code in latex, see the example code at:
+\url{http://www.damtp.cam.ac.uk/user/sje30/teaching/r/rlistings}.
+
+Your report must be a maximum of ten pages, excluding the appendix.
+This course work will consist of 25\% towards your overall mark for
+this module.  %%Items marked \hard should be attempted if you have time
+%% and are confident with your work on the rest of the assignment.
+
+
+
+
+
+\clearpage
+
+
+\section{Shakespeare [5 marks]}
+
+Download the data file \url{https://www.gutenberg.org/files/100/old/shaks12.txt}
+
+(a) Read the file into R on a line by line basis.  (readLines)
+
+(b) Break each line into words, where words are simply any characters separated by the space character
+(strsplit).
+
+(c) Remove any punctuation from words using the following hint:
+
+\begin{verbatim}
+> gsub("[[:punct:]]", '', c("MOTH.", "Thrice-worthy", "gentleman!"))
+[1] "MOTH"         "Thriceworthy" "gentleman"   
+\end{verbatim}
+
+This means for example that the words ``he'll'' and ``lords!-why''
+from the file will become the words ``hell'' and ``lordswhy''
+respectively.
+
+(d) Convert everything to lower case.
+
+(e) What are the five most common words in the file, and how often does each of
+them occur?  (Hint: use \verb+table()+).
+
+
+(f) What are the six longest words in this file?  (Hint: you should
+find 3 of the 6 longest words come from the preamble of the file, not
+from Shakespeare.)
+
+Show your code and the output that it generates, keeping the output
+concise.
+
+
+\section{Examination marking [10 points]}
+The data for this exercise is in \url{grading} folder.
+
+Twelve students have sat a multiple-choice exam.  The exam had 100
+questions, and each answer was one of a,b,c,d,e.  The file \url{crib.dat}
+stores the correct answer for each question (in order).  The students
+had to answer 30 questions from the 100.  Your job is to write a
+script that will mark each student's performance, and produce a
+data.frame which stores the results:
+
+\begin{rc}
+> results <- data.frame(student=1:num.students, score=correct,
+                        grade=alpha.grades, rank=rank)
+> print(results)
+   student score grade rank
+1        1    19     B  6.0
+2        2    xx     x  xxx
+3        3    xx     x  xxx
+4        4    xx     x  xxx
+5        5    xx     x  xxx
+6        6    xx     x  xxx
+7        7    xx     x  xxx
+8        8    xx     x  xxx
+9        9    xx     x  xxx
+10      10    xx     x  xxx
+11      11    xx     x  xxx
+12      12    xx     x  xxx
+\end{rc}
+
+
+To help you get started, you can see that student 1 got 19/30 correct,
+their rank was 6/12 (1st rank for highest) and their grade was B.
+Grades are determined using the datafile \url{grade.txt}; convert the score
+into a percentage, take the floor() to convert percentage to an
+integer, then find which grade band the score falls in.
+
+
+Hints: use \ri{read.table( , header=TRUE)} to read in a student file.  The
+name of the datafile to read in should be generated using paste().
+You can use scan() to read in the crib.dat file.
+
+
+
+The invigilator of the exam suspects that a student was cheating, but
+cannot recall which student it was.  Write a program that will
+automatically check whether a pair of students have similar results;
+what do you conclude?
+
+
+\section{Cryptarithms [10 marks]}
+
+[See \url{http://www.logicville.com/cryptarithm.htm} for background
+reading.  Note that leading digits in each number will not be zero.]
+
+(a) Write a function that solves the following maths problem: [5
+marks]
+
+\begin{verbatim}
+    A B
+    * C
+    ---
+    D E
+   +F G
+    ---
+    H I
+\end{verbatim}
+
+where the symbols A--I correspond to distinct digits, 0-9.  Show all
+solutions.
+
+
+
+(b) Write a function that takes one argument, a string, and returns
+all corresponding solutions.  Demonstrate it working on the following
+three cases: [5 marks]
+
+\begin{itemize}
+\item \texttt{"send + more = money"}
+\item \texttt{"snow + rain = sleet"}
+\item \hard \texttt{"one + two + two + three + three = eleven"}
+\end{itemize}
+
+
+To solve this problem you might find the following function useful.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{## ---- permutations}
+\hlcom{## Taken from: http://stackoverflow.com/questions/11095992}
+\hlstd{permutations} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{n}\hlstd{)\{}
+    \hlkwa{if}\hlstd{(n}\hlopt{==}\hlnum{1}\hlstd{)\{}
+        \hlkwd{return}\hlstd{(}\hlkwd{matrix}\hlstd{(}\hlnum{1}\hlstd{))}
+    \hlstd{\}} \hlkwa{else} \hlstd{\{}
+        \hlstd{sp} \hlkwb{<-} \hlkwd{permutations}\hlstd{(n}\hlopt{-}\hlnum{1}\hlstd{)}
+        \hlstd{p} \hlkwb{<-} \hlkwd{nrow}\hlstd{(sp)}
+        \hlstd{A} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{nrow}\hlstd{=n}\hlopt{*}\hlstd{p,}\hlkwc{ncol}\hlstd{=n)}
+        \hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{n)\{}
+            \hlstd{A[(i}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlstd{p}\hlopt{+}\hlnum{1}\hlopt{:}\hlstd{p,]} \hlkwb{<-} \hlkwd{cbind}\hlstd{(i,sp}\hlopt{+}\hlstd{(sp}\hlopt{>=}\hlstd{i))}
+        \hlstd{\}}
+        \hlkwd{return}\hlstd{(A)}
+    \hlstd{\}}
+\hlstd{\}}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+For the advanced section, you might find the following tip useful:
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{eval}\hlstd{(}\hlkwd{parse}\hlstd{(}\hlkwc{text}\hlstd{=}\hlstr{"rnorm(3)"}\hlstd{))}
+\end{alltt}
+\begin{verbatim}
+## [1]  1.6300217 -0.1902119  1.4706708
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+
+\end{document}
+
+
+
+

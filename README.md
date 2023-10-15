@@ -61,7 +61,7 @@ Assignments will be posted here.
 
 ### Assignment 1
 
-[PDF](assigns/a1/spa1-2023.pdf)
+[PDF](assigns/a1/spa1-2023.pdf)  [tex](assigns/a1/spa1-2023.tex)
 
 ## Moodle
 

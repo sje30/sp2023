@@ -10,6 +10,8 @@ In part one, we will go through the core of R programming.
 
 [Source folder](https://github.com/lgatto/spr/) for these slides.
 
+
+
 ### 2023-10-03
 
 introduction to course; page 1 - 35
@@ -35,9 +37,22 @@ first hour).
 
 page 137 - 177
 
-## Part two
 
-I anticipate four lectures on Julia, and some work on reproducible research.
+## Part two 
+
+### 2023-10-16
+
+(finished page 178-196 of R lectures).  Discussion of SPA1.  
+[Julia lecture 1](lecture1.pdf) page 1-12.
+
+[repository for Julia documents](https://github.com/Nick-Gale/2022_Scientific_Programming_CamCompBio)
+
+### 2023-10-17
+
+
+[Julia lecture 2](lecture2.pdf)
+
+
 
 ## Examples classes
 

@@ -52,6 +52,10 @@ page 137 - 177
 
 [Julia lecture 2](lecture2.pdf)
 
+[Julia lecture 3](lecture3.pdf)
+
+[Julia lecture 4](lecture4.pdf)
+
 
 
 ## Examples classes

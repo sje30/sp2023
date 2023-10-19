@@ -61,7 +61,7 @@ page 137 - 177
 
 [Reproducible research](rr3.pdf)
 
-[Make example](
+[Make example](https://github.com/lgatto/spr/tree/master/rr_make)
 
 ## Examples classes
 

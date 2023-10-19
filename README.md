@@ -57,6 +57,11 @@ page 137 - 177
 [Julia lecture 4](lecture4.pdf)
 
 
+### 2023-10-19
+
+[Reproducible research](rr3.pdf)
+
+[Make example](
 
 ## Examples classes
 

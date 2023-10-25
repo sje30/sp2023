@@ -89,6 +89,10 @@ Assignments will be posted here.
 
 [PDF](assigns/a1/spa1-2023.pdf)  [tex](assigns/a1/spa1-2023.tex)
 
+### Assignment 2
+
+[PDF](assigns/a2/spa2-2023.pdf)
+
 ## Moodle
 
 [Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will

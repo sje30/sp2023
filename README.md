@@ -93,6 +93,12 @@ Assignments will be posted here.
 
 [PDF](assigns/a2/spa2-2023.pdf)
 
+
+Hint: to compile a Rmarkdown on subliminal from the command line, this
+should work:
+
+    Rscript -e "rmarkdown::render('estimatek.Rmd', output_format='pdf_document')"
+
 ## Moodle
 
 [Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will

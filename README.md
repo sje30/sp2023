@@ -99,6 +99,11 @@ should work:
 
     Rscript -e "rmarkdown::render('estimatek.Rmd', output_format='pdf_document')"
 
+
+### Assignment 3
+
+[PDF](assigns/a3/spa3-2023.pdf)
+
 ## Moodle
 
 [Moodle](https://www.vle.cam.ac.uk/course/view.php?id=253091) will
